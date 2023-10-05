@@ -1,0 +1,45 @@
+class Cat{
+    String name;
+    String mastername;
+    int age;
+
+    public Cat(String name, String mastername, int age) {
+        this.name = name;
+        this.mastername = mastername;
+        this.age = age;
+    }
+
+    void Miu(){
+        if (age < 1){
+            System.out.printf("Мяяяяяяяу");
+        }
+        else{
+            System.out.printf("Мьььяяууу");
+        }
+    }
+    void Milk(){
+        System.out.printf(name + " пьёт молоко");
+    }
+
+    void Maidan(){
+        System.out.printf(name + " скачет");
+    }
+
+    void Getname(){
+        System.out.printf(name);
+    }
+
+    void Getage(){
+        System.out.println(age);
+    }
+    void displayInfo(){
+        System.out.printf("Name: %s \tMastername: %s \tAge: %d\n", name, mastername, age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Cat tom = new Cat("Bazuka", "Pavel", 10);
+        tom.Getage();
+    }
+}
